@@ -1,0 +1,30 @@
+.news_item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  .left {
+    padding: 15px 0;
+    margin: 0 20px 0 0;
+    h2 {
+      color: hsla(60, 8%, 36%, 0.588);
+      font-size: 30px;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; //当属性值为3，表示超出3行隐藏
+    }
+    p {
+      margin-top: 6px;
+      font-size: 26px;
+      color: rgb(150, 148, 148);
+    }
+  }
+  .right {
+    .adm-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
